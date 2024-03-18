@@ -80,7 +80,7 @@ export const EditServerModal = () => {
     return (
         <div>
         <Dialog open={isModalOpen} onOpenChange={handleClose}>
-            <DialogContent className="bg white text-black p-0 overflow-hidden">
+            <DialogContent className="bg-white text-black p-0 overflow-hidden">
                 <DialogHeader className="pt-8 px-6">
                     <DialogTitle className="text-2xl text-center font-bold">
                         Customize your server
