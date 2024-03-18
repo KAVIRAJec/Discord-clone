@@ -7,7 +7,10 @@ import { cn } from '@/lib/utils'
 import { ThemeProvider } from '@/components/providers/theme-provider' 
 import { ModalProvider } from '@/components/providers/modal-provider'
 
-const font = Open_Sans({ subsets: ['latin'] })
+const font = Open_Sans({ 
+  weight: '500',
+  subsets: ['latin'] 
+})
 
 export const metadata: Metadata = {
   title: 'Team Chat Application',
@@ -35,7 +38,7 @@ export default function RootLayout({
             <ModalProvider />
             {children}
           </ThemeProvider>
-          </body>
+        </body>
       </html>
     </ClerkProvider>
   )
