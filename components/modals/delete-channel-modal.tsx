@@ -29,7 +29,7 @@ export const DeleteChannelModal = () => {
     try {
       setIsLoading(true);
       const url = qs.stringifyUrl({
-        url: `spi/channels${channel?.id}`,
+        url: `/api/channels/${channel?.id}`,
         query: {
           serverId: server?.id,
         }
@@ -39,7 +39,7 @@ export const DeleteChannelModal = () => {
 
       onClose();
       router.refresh();
-      router.push(`/server/${server?.id}`);
+      router.push(`/servers/${server?.id}`);
     } catch (error) {
       console.log(error);
     } finally {
