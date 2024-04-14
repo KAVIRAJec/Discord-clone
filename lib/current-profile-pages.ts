@@ -11,7 +11,10 @@ export const currentProfilePages = async (req: NextApiRequest) => {
     }
 
     const profile = await db.profile.findUnique({
-        where: { userId }
+        where: { 
+            userId 
+        }
     });
+
     return profile;
 }
