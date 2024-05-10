@@ -5,7 +5,7 @@ import axios from "axios";
 import qs from "query-string";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Plus } from "lucide-react";
+import { Plus, Smile } from "lucide-react";
 import { useRouter } from "next/navigation";
 
 import {
@@ -16,6 +16,7 @@ import {
   } from "@/components/ui/form";
   import { Input } from "@/components/ui/input";
   import { useModal } from "@/hooks/use-modal-store";
+import { EmojiPicker } from "@/components/emoji-picker";
 
 interface ChatInputProps {
     apiUrl: string;
@@ -86,6 +87,9 @@ interface ChatInputProps {
                     {...field}
                   />
                   <div className="absolute top-7 right-8">
+                    <EmojiPicker
+                      onChange={(emoji: string) => field.onChange(`${field.value} ${emoji}`)}  
+                    />
                   </div>
                 </div>
               </FormControl>
