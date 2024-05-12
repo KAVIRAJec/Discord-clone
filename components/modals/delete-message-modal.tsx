@@ -28,8 +28,8 @@ export const DeleteMessageModal = () => {
       setIsLoading(true);
       const url = qs.stringifyUrl({
         url: apiUrl || "",
-        query: query,
-      })
+        query,
+      });
 
       await axios.delete(url);
 
@@ -50,7 +50,7 @@ export const DeleteMessageModal = () => {
           </DialogTitle>
           <DialogDescription className="text-center text-zinc-500">
             Are you sure you want to do this? <br />
-            the message will be permanently deleted.
+            The message will be permanently deleted.
           </DialogDescription>
         </DialogHeader>
         <DialogFooter className="bg-gray-100 px-6 py-4">
