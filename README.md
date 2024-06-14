@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Discord Clone
+
+This project is a Discord clone developed using Next.js, React.js, and TypeScript. It features real-time messaging, file attachments, member management, voice and video calls, server creation, and customization, among other functionalities.
+
+![MasterHead](https://github.com/KAVIRAJec/Discord-clone/blob/main/Output%20Images/Main%20page.png)
+
+## Technologies Used
+
+- Frontend: Next.js, React.js, TypeScript
+- UI Libraries: ShadCN UI, Tailwind CSS
+- Login Authentication: Clerk Authentication
+- Image/PDF Upload: Uploadthing
+- ORM: Prisma (with support for MySQL, PostgreSQL, etc.)
+- Database: MySQL (using Aiven Cloud)
+- Web Deployment: Railway
+- Real-time Messaging: Socket.io
+- Audio/Video Calls: Livekit
+
+## Key Features
+
+- Real-time messaging using Socket.io
+- Send attachments as messages using UploadThing
+- Delete & edit messages in real-time for all users
+- Create text, audio, and video call channels
+- 1:1 conversation between members
+- 1:1 video calls between members
+- Member management (Kick, Role change Guest/Moderator)
+- Unique invite link generation & full working invite system
+- Infinite loading for messages in batches of 10 (@tanstack/query)
+- Server creation and customization
+- Beautiful UI using Tailwind CSS and ShadcnUI
+- Full responsivity and mobile UI
+- Light/Dark mode
+- Websocket fallback: Polling with alerts
+- ORM using Prisma
+- MySQL database using Aiven Cloud
+- Authentication with Clerk
+
+## Project Details
+
+- Operating System: Ubuntu (Linux)
+- Cloud Platform: Initially developed using Microsoft Azure Cloud, then moved the deployment to the Aiven MySQL server.
+- Duration: 2 - 3 months
+- Contribution: Individual (100%)
+
+## Demo Image
+
+Navigate to ```Output Images ``` to view the webpage images
+
+## Deployed Website Link
+
+https://discord-clone-production-2131.up.railway.app
+
+## Learning Experience
+
+This project provided me with valuable knowledge on developing higher-level applications and understanding their workings. I gained expertise in style and UI development and mastered Git and GitHub commits for version control.
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/KAVIRAJec/Discord-clone.git
+   ```
+2. Navigate to the project directory and install dependencies:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+    ```bash
+    cd Discord-clone
+    npm install
+    ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Update the environment variables with your credentials.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+4. Start the development server:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+    ```bash
+    npm run dev
+    ```
+5. Open http://localhost:3000 with your browser to see the result.
 
-## Learn More
+Feel free to explore the project and contribute to its development!
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## MIT License
